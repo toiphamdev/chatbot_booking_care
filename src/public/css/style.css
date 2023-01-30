@@ -1,0 +1,7 @@
+.is-invalid {
+    border-color: red;
+}
+
+.hide {
+    display: none;
+}

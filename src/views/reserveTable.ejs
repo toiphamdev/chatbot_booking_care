@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        let senderID = "<%= senderID %>";
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đặt Bàn</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="closeWebView hide">
+            <h3>Đã đăng kí thành công quý khách vui lòng đóng cửa sổ web view</h3>
+        </div>
+        <div class="container formBody">
+            <h1 style="text-align: center;">Thông tin của khách hàng</h1>
+            <form>
+                <input type="text" id="psid" hidden>
+                <div class="form-group">
+                    <label for="InputName">Họ và tên</label>
+                    <input type="text" class="form-control" id="InputName" placeholder="Nhập họ và tên">
+                </div>
+                <div class="form-group">
+                    <label for="InputEmaill">Địa chỉ email(<span style="color: red;">*</span>)</label>
+                    <input type="email" class="form-control" id="InputEmaill" placeholder="Nhập email">
+                </div>
+                <div class="form-group">
+                    <label for="InputPhoneNumber">Số điện thoại(<span style="color: red;">*</span>)</label>
+                    <input type="text" class="form-control" id="InputPhoneNumber" placeholder="Số diện thoại">
+                </div>
+                <span style="margin-bottom: 30px;" class="form-text text-muted">Những nơi có (<span
+                        style="color: red;">*</span>) là
+                    trường bắt buộc.</span>
+                <button id="btnReserveTable" type="submit" class="btn btn-primary">ĐẶT BÀN</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="/js/reserveTable.js"></script>
+</body>
+
+</html>
