@@ -5,7 +5,7 @@
   "main": "sever.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon babel-node src/sever.js"
+    "start": "node babel-node src/sever.js"
   },
   "author": "",
   "license": "ISC",
